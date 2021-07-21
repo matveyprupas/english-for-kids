@@ -1,0 +1,19 @@
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__burger {
+}
+
+.header__switch span {
+  text-transform: uppercase;
+}
+
+.header__switch-round {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: blue;
+}
