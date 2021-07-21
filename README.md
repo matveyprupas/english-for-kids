@@ -7,7 +7,7 @@
 2. Category Page
 3. Statistics Page
 
-![screenshot](english-for.kids.data/img/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/rolling-scopes-school/tasks/master/tasks/rslang/english-for.kids.data/img/screenshot.png)
 ### Demo
 https://english-for-kids.netlify.com/ (version without Hacker scope)
 
