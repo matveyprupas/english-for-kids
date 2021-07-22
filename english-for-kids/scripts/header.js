@@ -1,7 +1,13 @@
+let header = document.querySelector("header.header");
 let switchBtn = document.querySelector("div.header__switch");
 switchBtn.addEventListener("click", switchMode);
 let burger = document.querySelector("div.header__burger");
 burger.addEventListener("click", openMenu);
+let menuPart = document.querySelectorAll("div.menu__part");
+menuPart.forEach( el => el.addEventListener("click", chooseMenuPart) );
+
+let menu = document.querySelector(".menu");
+menu.style.top = header.offsetHeight + "px";
 
 function switchMode () {
     switchBtn.classList.toggle("checked");
@@ -9,18 +15,10 @@ function switchMode () {
 
 function openMenu () {
     burger.classList.toggle("header__menu-opened");
-    let lineArray = burger.querySelectorAll("line");
+    menu.classList.toggle("menu_opened");
+}
 
-    if(burger.classList.length > 1) {
-        // lineArray[0].setAttribute("y2", "50");
-        // lineArray[2].setAttribute("y2", "00");
-    } else {
-        // lineArray[0].setAttribute("y2", "0");
-        // lineArray[2].setAttribute("y2", "50");
-    }
-    // lineArray[0].style.opacity = 0;
-    
-
-    // lineArray[0].setAttribute();
-    // console.log(lineArray);
+function chooseMenuPart (e) {
+    menuPart.forEach( el => el.classList.remove("menu__part_choosed") );
+    e.target.classList.add("menu__part_choosed");
 }

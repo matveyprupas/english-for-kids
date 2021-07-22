@@ -1,0 +1,30 @@
+.menu {
+  background-color: lightgrey;
+  position: absolute;
+  bottom: 0;
+  width: 30vw;
+  padding: 10px 0 0 50px;
+  transition: all 0.3s ease-out;
+
+  left: -40vw;
+}
+
+.menu__part {
+  padding: 10px;
+  transition: all 0.2s ease-out;
+  font-size: 20px;
+}
+
+.menu__part:hover {
+  cursor: pointer;
+  background-color: #707070;
+}
+
+.menu__part_choosed {
+  color: #212636;
+  font-weight: 700;
+}
+
+.menu_opened {
+  left: 0;
+}
