@@ -3,6 +3,7 @@ let switchBtn = document.querySelector("div.header__switch");
 switchBtn.addEventListener("click", switchMode);
 let burger = document.querySelector("div.header__burger");
 burger.addEventListener("click", openMenu);
+document.addEventListener("keydown", closeMenu);
 let menuPart = document.querySelectorAll("div.menu__part");
 menuPart.forEach( el => el.addEventListener("click", chooseMenuPart) );
 
@@ -16,6 +17,12 @@ function switchMode () {
 function openMenu () {
     burger.classList.toggle("header__menu-opened");
     menu.classList.toggle("menu_opened");
+}
+
+function closeMenu (e) {
+    if (e.code !== "Escape") return;
+    burger.classList.remove("header__menu-opened");
+    menu.classList.remove("menu_opened");
 }
 
 function chooseMenuPart (e) {
