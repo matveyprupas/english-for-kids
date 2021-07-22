@@ -1,3 +1,5 @@
+"use strict";
+
 let header = document.querySelector("header.header");
 let switchBtn = document.querySelector("div.header__switch");
 switchBtn.addEventListener("click", switchMode);
