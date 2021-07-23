@@ -27,6 +27,11 @@ function closeMenu (e) {
     menu.classList.remove("menu_opened");
 }
 
+function closeMenuWithoutEvent () {
+    burger.classList.remove("header__menu-opened");
+    menu.classList.remove("menu_opened");
+}
+
 function chooseMenuPart (e) {
     menuPart.forEach( el => el.classList.remove("menu__part_choosed") );
     e.target.classList.add("menu__part_choosed");

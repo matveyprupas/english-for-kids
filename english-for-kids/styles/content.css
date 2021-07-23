@@ -1,0 +1,51 @@
+.main {
+  position: relative;
+}
+
+.main .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.main .container h2 {
+  margin: 0;
+}
+
+.main__card {
+  max-width: 250px;
+  background-color: #fefefe;
+  border-radius: 20px;
+  border: 2px solid #333;
+  margin-bottom: 60px;
+}
+
+.main__card .main__card-img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  border-bottom: 2px #333 solid;
+}
+
+.main__card-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.main__card-description span {
+  font-size: 24px;
+  font-weight: 700;
+}
+.main__card-rotate {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.cardpage__card-description {
+  /* display: flex; */
+  justify-content: space-between;
+  /* align-items: center;
+  padding: 20px; */
+}

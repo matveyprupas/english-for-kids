@@ -1,18 +1,24 @@
 .menu {
   background-color: lightgrey;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 30vw;
   padding: 10px 0 0 50px;
   transition: all 0.3s ease-out;
-
   left: -40vw;
+  z-index: 5;
 }
 
 .menu__part {
   padding: 10px;
   transition: all 0.2s ease-out;
   font-size: 20px;
+  color: #707070;
+}
+
+.menu__part_onclick {
+  color: #333;
+  font-weight: 500;
 }
 
 .menu__part:hover {
@@ -22,7 +28,7 @@
 
 .menu__part_choosed {
   color: #212636;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .menu_opened {
