@@ -1,3 +1,5 @@
+"use strict";
+
 let header = document.querySelector("header.header");
 let switchBtn = document.querySelector("div.header__switch");
 switchBtn.addEventListener("click", switchMode);
@@ -21,6 +23,11 @@ function openMenu () {
 
 function closeMenu (e) {
     if (e.code !== "Escape") return;
+    burger.classList.remove("header__menu-opened");
+    menu.classList.remove("menu_opened");
+}
+
+function closeMenuWithoutEvent () {
     burger.classList.remove("header__menu-opened");
     menu.classList.remove("menu_opened");
 }

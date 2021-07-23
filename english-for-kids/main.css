@@ -1,6 +1,7 @@
 @import url(./normalize.css);
 @import url(./styles/header.css);
 @import url(./styles/menu.css);
+@import url(./styles/content.css);
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
