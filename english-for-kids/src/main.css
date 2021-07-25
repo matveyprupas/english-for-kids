@@ -14,3 +14,11 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+
+.h2__color {
+  color: red;
+}
+
+.image__square {
+  border-radius: 20px;
+}
