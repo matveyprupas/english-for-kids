@@ -1,8 +1,20 @@
 "use strict";
 
-document.querySelector("main.main").style.top = header.offsetHeight + "px";
-
 window.onhashchange = switchToStateFromURLHash;
+
+// !!! VIEW !!!
+// !!! VIEW !!!
+// !!! VIEW !!!
+
+let mainDOM = document.createElement("main");
+mainDOM.classList.add("main");
+let main__container = document.createElement("div");
+main__container.classList.add("container");
+
+mainDOM.appendChild(main__container);
+document.body.appendChild(mainDOM);
+
+document.querySelector("main.main").style.top = header.offsetHeight + "px";
 
 // !!! MODEL !!!
 // !!! MODEL !!!
@@ -109,12 +121,12 @@ function switchToClothesPage () {
 
 document.querySelector("h1").addEventListener("click", switchToMainPage);
 document.getElementById("main_page_btn").addEventListener("click", switchToMainPage);
-document.getElementById("action_page_btn").addEventListener("click", switchToActionPage);
-document.getElementById("animal_page_btn").addEventListener("click", switchToAnimalPage);
+document.getElementById("actiona_page_btn").addEventListener("click", switchToActionPage);
+document.getElementById("animala_page_btn").addEventListener("click", switchToAnimalPage);
 document.getElementById("clothes_page_btn").addEventListener("click", switchToClothesPage);
 document.getElementById("main_page_btn").classList.add("menu__part_onclick");
-document.getElementById("action_page_btn").classList.add("menu__part_onclick");
-document.getElementById("animal_page_btn").classList.add("menu__part_onclick");
+document.getElementById("actiona_page_btn").classList.add("menu__part_onclick");
+document.getElementById("animala_page_btn").classList.add("menu__part_onclick");
 document.getElementById("clothes_page_btn").classList.add("menu__part_onclick");
 
 // !!! VIEW !!!
