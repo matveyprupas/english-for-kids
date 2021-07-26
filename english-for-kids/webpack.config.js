@@ -10,7 +10,10 @@ module.exports = {
         clean: true
     },
     plugins: [
-        new HtmlWebpackPlugin()
+        new HtmlWebpackPlugin({
+          title: 'Custom template',
+          template: './src/index.html'
+        })
     ],
     module: {
         rules: [

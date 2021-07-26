@@ -1,8 +1,15 @@
-// import {header} from "./scripts/header.js";
-// import "./scripts/header.js";
-// import WebpackImage from "./assets/imgs/build.jpg";
-// import "./main.css";
+import './main.css';
 
+// import { header } from './scripts/header';
+// import {mainDOM} from "./scripts/spa";
+
+import { switchToStateFromURLHash } from './scripts/spa';
+import hug from './assets/imgs/hug.jpg';
+
+switchToStateFromURLHash();
+
+export const img = new Image();
+img.src = hug;
 
 // let header = document.createElement("header");
 // header.classList.add("header");
@@ -22,6 +29,7 @@
 
 // let h1 = document.createElement("h1");
 // h1.textContent = "English for kids";
+// document.body.appendChild(header);
 
 // let header__switch = document.createElement("div");
 // header__switch.classList.add("header__switch");
