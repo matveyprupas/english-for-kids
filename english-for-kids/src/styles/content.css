@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 100px 0;
+  padding: 100px 50px;
 }
 
 .main .container h2 {
@@ -18,7 +18,8 @@
   background-color: #fefefe;
   border-radius: 20px;
   border: 2px solid #333;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
+  margin: 0 10px 60px;
 }
 
 .main__card .main__card-img {

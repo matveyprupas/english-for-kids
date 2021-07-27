@@ -12,6 +12,13 @@ import sheepImg from '../assets/imgs/sheep.jpg';
 import shirtImg from '../assets/imgs/shirt.jpg';
 import swimImg from '../assets/imgs/swim.jpg';
 import youngImg from '../assets/imgs/young.jpg';
+import dolphinImg from '../assets/imgs/dolphin.jpg';
+import angryImg from '../assets/imgs/angry.jpg';
+import jumpImg from '../assets/imgs/jump.jpg';
+import drawImg from '../assets/imgs/draw.jpg';
+import flyImg from '../assets/imgs/fly.jpg';
+import cryImg from '../assets/imgs/cry.jpg';
+import walkImg from '../assets/imgs/walk.jpg';
 
 window.onhashchange = switchToStateFromURLHash;
 
@@ -21,10 +28,10 @@ window.onhashchange = switchToStateFromURLHash;
 
 export const mainDOM = document.createElement('main');
 mainDOM.classList.add('main');
-const main__container = document.createElement('div');
-main__container.classList.add('container');
+const mainContainer = document.createElement('div');
+mainContainer.classList.add('container');
 
-mainDOM.appendChild(main__container);
+mainDOM.appendChild(mainContainer);
 document.body.appendChild(mainDOM);
 
 document.querySelector('main.main').style.top = `${header.offsetHeight}px`;
@@ -41,20 +48,26 @@ const wordsObj = {
     'Action (set A)': {
       image: hugImg, englishWord: 'hug', russianWord: 'обнимашки', audio: 'hug.mp3',
     },
+    'Action (set B)': {
+      image: swimImg, englishWord: 'swim', russianWord: 'плавать', audio: 'swim.mp3',
+    },
+    'Action (set C)': {
+      image: buildImg, englishWord: 'build', russianWord: 'строить', audio: 'build.mp3',
+    },
+    Adjective: {
+      image: youngImg, englishWord: 'young', russianWord: 'молодой', audio: 'young.mp3',
+    },
     'Animal (set A)': {
       image: sheepImg, englishWord: 'sheep', russianWord: 'овечечка', audio: 'sheep.mp3',
+    },
+    'Animal (set B)': {
+      image: dolphinImg, englishWord: 'dolphin', russianWord: 'дельфинушка', audio: 'dolphin.mp3',
     },
     Clothes: {
       image: shirtImg, englishWord: 'shirt', russianWord: 'рубаха', audio: 'shirt.mp3',
     },
-    'Action (set B)': {
-      image: hugImg, englishWord: 'hug', russianWord: 'обнимашки', audio: 'hug.mp3',
-    },
-    'Animal (set B)': {
-      image: sheepImg, englishWord: 'sheep', russianWord: 'овечечка', audio: 'sheep.mp3',
-    },
     Emotions: {
-      image: shirtImg, englishWord: 'shirt', russianWord: 'рубаха', audio: 'shirt.mp3',
+      image: angryImg, englishWord: 'angry', russianWord: 'злость', audio: 'angry.mp3',
     },
   },
   actiona: {
@@ -68,11 +81,20 @@ const wordsObj = {
     dance: {
       image: danceImg, englishWord: 'dance', russianWord: 'танцевать', audio: 'dance.mp3',
     },
-    dive2: {
-      image: diveImg, englishWord: 'dive', russianWord: 'нырять', audio: 'dive.mp3',
+    jump: {
+      image: jumpImg, englishWord: 'jump', russianWord: 'прыгать', audio: 'jump.mp3',
     },
-    dance2: {
-      image: danceImg, englishWord: 'dance', russianWord: 'танцевать', audio: 'dance.mp3',
+    draw: {
+      image: drawImg, englishWord: 'draw', russianWord: 'рисовать', audio: 'dance.mp3',
+    },
+    fly: {
+      image: flyImg, englishWord: 'fly', russianWord: 'летать', audio: 'fly.mp3',
+    },
+    cry: {
+      image: cryImg, englishWord: 'cry', russianWord: 'плакать', audio: 'cry.mp3',
+    },
+    walk: {
+      image: walkImg, englishWord: 'walk', russianWord: 'ходить', audio: 'walk.mp3',
     },
   },
   animala: {
@@ -162,8 +184,16 @@ function switchToMainPage() {
   switchToState({ pagename: 'Main' });
 }
 
-function switchToActionPage() {
+function switchToActionAPage() {
   switchToState({ pagename: 'ActionA' });
+}
+
+function switchToActionBPage() {
+  switchToState({ pagename: 'ActionB' });
+}
+
+function switchToActionCPage() {
+  switchToState({ pagename: 'ActionC' });
 }
 
 function switchToAnimalPage() {
@@ -176,11 +206,17 @@ function switchToClothesPage() {
 
 document.querySelector('h1').addEventListener('click', switchToMainPage);
 document.getElementById('main_page_btn').addEventListener('click', switchToMainPage);
-document.getElementById('actiona_page_btn').addEventListener('click', switchToActionPage);
+document.getElementById('actiona_page_btn').addEventListener('click', switchToActionAPage);
+document.getElementById('actionb_page_btn').addEventListener('click', switchToActionBPage);
+document.getElementById('actionc_page_btn').addEventListener('click', switchToActionCPage);
+
 document.getElementById('animala_page_btn').addEventListener('click', switchToAnimalPage);
 document.getElementById('clothes_page_btn').addEventListener('click', switchToClothesPage);
 document.getElementById('main_page_btn').classList.add('menu__part_onclick');
 document.getElementById('actiona_page_btn').classList.add('menu__part_onclick');
+document.getElementById('actionb_page_btn').classList.add('menu__part_onclick');
+document.getElementById('actionc_page_btn').classList.add('menu__part_onclick');
+
 document.getElementById('animala_page_btn').classList.add('menu__part_onclick');
 document.getElementById('clothes_page_btn').classList.add('menu__part_onclick');
 
@@ -198,7 +234,6 @@ function layoutMainPage() {
     if (typeof wordsObj.main[key] === 'string') continue;
     cardImg = wordsObj.main[key].image;
     englishWord = wordsObj.main[key].englishWord;
-
     card = `
         <div class="main__card">
             <img src="${cardImg}" alt="${englishWord}" title="${englishWord}" class="main__card-img">

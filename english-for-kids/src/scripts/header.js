@@ -4,12 +4,12 @@
 
 export const header = document.createElement('header');
 header.classList.add('header');
-const header__container = document.createElement('div');
-header__container.classList.add('container');
+const headerContainer = document.createElement('div');
+headerContainer.classList.add('container');
 
-const header__burger = document.createElement('div');
-header__burger.classList.add('header__burger');
-header__burger.innerHTML = `
+const headerBurger = document.createElement('div');
+headerBurger.classList.add('header__burger');
+headerBurger.innerHTML = `
     <svg viewBox="0 0 80 60" width="40" height="40">
         <line x1="4" y1="0" x2="76" y2="0"></line>
         <line x1="4" y1="25" x2="76" y2="25"></line>
@@ -21,19 +21,19 @@ header__burger.innerHTML = `
 const h1 = document.createElement('h1');
 h1.textContent = 'English for kids';
 
-const header__switch = document.createElement('div');
-header__switch.classList.add('header__switch');
-header__switch.classList.add('checked');
-header__switch.innerHTML = `
+const headerSwitch = document.createElement('div');
+headerSwitch.classList.add('header__switch');
+headerSwitch.classList.add('checked');
+headerSwitch.innerHTML = `
     <span>train</span>
     <div class="header__switch-round"></div>
     <span>play</span>
 `;
 
-header__container.appendChild(header__burger);
-header__container.appendChild(h1);
-header__container.appendChild(header__switch);
-header.appendChild(header__container);
+headerContainer.appendChild(headerBurger);
+headerContainer.appendChild(h1);
+headerContainer.appendChild(headerSwitch);
+header.appendChild(headerContainer);
 document.body.appendChild(header);
 // console.log(header.offsetHeight);
 
