@@ -4,6 +4,8 @@
 
 **My Realization** - https://matveyprupas.github.io/english-for-kids/english-for-kids/src/
 
+https://matveyprupas.github.io/english-for-kids/src/
+
 ## Application Structure:
 
 1. Main page
