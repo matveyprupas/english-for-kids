@@ -2,9 +2,7 @@
 
 **English for kids** - an application for learning English words for kids.
 
-**My Realization** - https://matveyprupas.github.io/english-for-kids/english-for-kids/src/
-
-https://matveyprupas.github.io/english-for-kids/src/
+**My Realization** - https://matveyprupas.github.io/english-for-kids/english-for-kids/dist/
 
 ## Application Structure:
 
