@@ -1,26 +1,25 @@
-import { header, closeMenuWithoutEvent } from './header';
-import bootImg from '../assets/imgs/boot.jpg';
-import buildImg from '../assets/imgs/build.jpg';
-import chickImg from '../assets/imgs/chick.jpg';
-import danceImg from '../assets/imgs/dance.jpg';
-import diveImg from '../assets/imgs/dive.jpg';
-import dressImg from '../assets/imgs/dress.jpg';
-import hugImg from '../assets/imgs/hug.jpg';
-import pigImg from '../assets/imgs/pig.jpg';
-import rotateSvg from '../assets/imgs/rotate.svg';
-import sheepImg from '../assets/imgs/sheep.jpg';
-import shirtImg from '../assets/imgs/shirt.jpg';
-import swimImg from '../assets/imgs/swim.jpg';
-import youngImg from '../assets/imgs/young.jpg';
-import dolphinImg from '../assets/imgs/dolphin.jpg';
-import angryImg from '../assets/imgs/angry.jpg';
-import jumpImg from '../assets/imgs/jump.jpg';
-import drawImg from '../assets/imgs/draw.jpg';
-import flyImg from '../assets/imgs/fly.jpg';
-import cryImg from '../assets/imgs/cry.jpg';
-import walkImg from '../assets/imgs/walk.jpg';
-
-window.onhashchange = switchToStateFromURLHash;
+import { header } from '../header/view';
+import { closeMenuWithoutEvent } from '../header/ctrl';
+import bootImg from '../../assets/imgs/boot.jpg';
+import buildImg from '../../assets/imgs/build.jpg';
+import chickImg from '../../assets/imgs/chick.jpg';
+import danceImg from '../../assets/imgs/dance.jpg';
+import diveImg from '../../assets/imgs/dive.jpg';
+import dressImg from '../../assets/imgs/dress.jpg';
+import hugImg from '../../assets/imgs/hug.jpg';
+import pigImg from '../../assets/imgs/pig.jpg';
+import rotateSvg from '../../assets/imgs/rotate.svg';
+import sheepImg from '../../assets/imgs/sheep.jpg';
+import shirtImg from '../../assets/imgs/shirt.jpg';
+import swimImg from '../../assets/imgs/swim.jpg';
+import youngImg from '../../assets/imgs/young.jpg';
+import dolphinImg from '../../assets/imgs/dolphin.jpg';
+import angryImg from '../../assets/imgs/angry.jpg';
+import jumpImg from '../../assets/imgs/jump.jpg';
+import drawImg from '../../assets/imgs/draw.jpg';
+import flyImg from '../../assets/imgs/fly.jpg';
+import cryImg from '../../assets/imgs/cry.jpg';
+import walkImg from '../../assets/imgs/walk.jpg';
 
 // !!! VIEW !!!
 // !!! VIEW !!!
@@ -203,6 +202,8 @@ function switchToAnimalPage() {
 function switchToClothesPage() {
   switchToState({ pagename: 'Clothes' });
 }
+
+window.onhashchange = switchToStateFromURLHash;
 
 document.querySelector('h1').addEventListener('click', switchToMainPage);
 document.getElementById('main_page_btn').addEventListener('click', switchToMainPage);
