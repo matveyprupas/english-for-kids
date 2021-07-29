@@ -20,6 +20,10 @@
   border: 2px solid #333;
   /* margin-bottom: 60px; */
   margin: 0 10px 60px;
+  transition: all 0.3s ease-out;
+}
+.main__card:hover {
+  transform: scale(1.2);
 }
 
 .main__card .main__card-img {

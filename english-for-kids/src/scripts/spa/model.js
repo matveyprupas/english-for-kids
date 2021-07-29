@@ -17,6 +17,7 @@ import drawImg from '../../assets/imgs/draw.jpg';
 import flyImg from '../../assets/imgs/fly.jpg';
 import cryImg from '../../assets/imgs/cry.jpg';
 import walkImg from '../../assets/imgs/walk.jpg';
+import squidImg from '../../assets/imgs/squid.jpg';
 
 // !!! MODEL !!!
 // !!! MODEL !!!
@@ -54,6 +55,9 @@ export const wordsObj = {
     },
     Emotions: {
       image: angryImg, englishWord: 'angry', russianWord: 'злость', audio: 'angry.mp3',
+    },
+    Food: {
+      image: squidImg, englishWord: 'squid', russianWord: 'осьминог', audio: 'squid.mp3',
     },
   },
   actiona: {
