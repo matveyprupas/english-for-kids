@@ -1,14 +1,6 @@
-import bootImg from '../../assets/imgs/boot.jpg';
-import chickImg from '../../assets/imgs/chick.jpg';
 import danceImg from '../../assets/imgs/dance.jpg';
 import diveImg from '../../assets/imgs/dive.jpg';
-import dressImg from '../../assets/imgs/dress.jpg';
 import hugImg from '../../assets/imgs/hug.jpg';
-import pigImg from '../../assets/imgs/pig.jpg';
-import sheepImg from '../../assets/imgs/sheep.jpg';
-import shirtImg from '../../assets/imgs/shirt.jpg';
-import dolphinImg from '../../assets/imgs/dolphin.jpg';
-import angryImg from '../../assets/imgs/angry.jpg';
 import jumpImg from '../../assets/imgs/jump.jpg';
 import drawImg from '../../assets/imgs/draw.jpg';
 import flyImg from '../../assets/imgs/fly.jpg';
@@ -51,6 +43,50 @@ import youngImg from '../../assets/imgs/young.jpg';
 import oldImg from '../../assets/imgs/old.jpg';
 import bigImg from '../../assets/imgs/big.jpg';
 import smallImg from '../../assets/imgs/small.jpg';
+
+// AnimalA
+
+import horseImg from '../../assets/imgs/horse.jpg';
+import catImg from '../../assets/imgs/cat.jpg';
+import chickenImg from '../../assets/imgs/chicken.jpg';
+import rabbitImg from '../../assets/imgs/rabbit.jpg';
+import dogImg from '../../assets/imgs/dog.jpg';
+import chickImg from '../../assets/imgs/chick.jpg';
+import pigImg from '../../assets/imgs/pig.jpg';
+import sheepImg from '../../assets/imgs/sheep.jpg';
+
+// AnimalB
+
+import birdImg from '../../assets/imgs/bird.jpg';
+import frogImg from '../../assets/imgs/frog.jpg';
+import turtleImg from '../../assets/imgs/turtle.jpg';
+import dolphinImg from '../../assets/imgs/dolphin.jpg';
+import giraffeImg from '../../assets/imgs/giraffe.jpg';
+import fishImg from '../../assets/imgs/fish.jpg';
+import lionImg from '../../assets/imgs/lion.jpg';
+import mouseImg from '../../assets/imgs/mouse.jpg';
+
+// Clothes
+
+import shoeImg from '../../assets/imgs/shoe.jpg';
+import coatImg from '../../assets/imgs/coat.jpg';
+import skirtImg from '../../assets/imgs/skirt.jpg';
+import pantsImg from '../../assets/imgs/pants.jpg';
+import blouseImg from '../../assets/imgs/blouse.jpg';
+import dressImg from '../../assets/imgs/dress.jpg';
+import bootImg from '../../assets/imgs/boot.jpg';
+import shirtImg from '../../assets/imgs/shirt.jpg';
+
+// Emotions
+
+import scaredImg from '../../assets/imgs/scared.jpg';
+import happyImg from '../../assets/imgs/happy.jpg';
+import tiredImg from '../../assets/imgs/tired.jpg';
+import sadImg from '../../assets/imgs/sad.jpg';
+import surprisedImg from '../../assets/imgs/surprised.jpg';
+import laughImg from '../../assets/imgs/laugh.jpg';
+import smileImg from '../../assets/imgs/smile.jpg';
+import angryImg from '../../assets/imgs/angry.jpg';
 
 // !!! MODEL !!!
 // !!! MODEL !!!
@@ -221,11 +257,47 @@ export const wordsObj = {
     pig: {
       image: pigImg, englishWord: 'pig', russianWord: 'свинотка', audio: 'pig.mp3',
     },
-    chick2: {
-      image: chickImg, englishWord: 'chick', russianWord: 'цыпа', audio: 'chick.mp3',
+    horse: {
+      image: horseImg, englishWord: 'horse', russianWord: 'лошадка', audio: 'horse.mp3',
     },
-    pig2: {
-      image: pigImg, englishWord: 'pig', russianWord: 'свинотка', audio: 'pig.mp3',
+    cat: {
+      image: catImg, englishWord: 'cat', russianWord: 'киска', audio: 'cat.mp3',
+    },
+    chicken: {
+      image: chickenImg, englishWord: 'chicken', russianWord: 'курочка', audio: 'chicken.mp3',
+    },
+    rabbit: {
+      image: rabbitImg, englishWord: 'rabbit', russianWord: 'клолик', audio: 'rabbit.mp3',
+    },
+    dog: {
+      image: dogImg, englishWord: 'dog', russianWord: 'собачка', audio: 'dog.mp3',
+    },
+  },
+  animalb: {
+    pagename: 'Animal',
+    bird: {
+      image: birdImg, englishWord: 'bird', russianWord: 'овечечка', audio: 'bird.mp3',
+    },
+    frog: {
+      image: frogImg, englishWord: 'frog', russianWord: 'цыпа', audio: 'frog.mp3',
+    },
+    turtle: {
+      image: turtleImg, englishWord: 'turtle', russianWord: 'свинотка', audio: 'turtle.mp3',
+    },
+    dolphin: {
+      image: dolphinImg, englishWord: 'dolphin', russianWord: 'лошадка', audio: 'dolphin.mp3',
+    },
+    giraffe: {
+      image: giraffeImg, englishWord: 'giraffe', russianWord: 'киска', audio: 'giraffe.mp3',
+    },
+    fish: {
+      image: fishImg, englishWord: 'fish', russianWord: 'курочка', audio: 'fish.mp3',
+    },
+    lion: {
+      image: lionImg, englishWord: 'lion', russianWord: 'клолик', audio: 'lion.mp3',
+    },
+    mouse: {
+      image: mouseImg, englishWord: 'mouse', russianWord: 'собачка', audio: 'mouse.mp3',
     },
   },
   clothes: {
@@ -239,11 +311,47 @@ export const wordsObj = {
     boot: {
       image: bootImg, englishWord: 'boot', russianWord: 'боты', audio: 'boot.mp3',
     },
-    dress2: {
-      image: dressImg, englishWord: 'dress', russianWord: 'то, чего всегда мало', audio: 'dress.mp3',
+    shoe: {
+      image: shoeImg, englishWord: 'shoe', russianWord: 'то, чего всегда мало', audio: 'shoe.mp3',
     },
-    boot2: {
-      image: bootImg, englishWord: 'boot', russianWord: 'боты', audio: 'boot.mp3',
+    coat: {
+      image: coatImg, englishWord: 'coat', russianWord: 'боты', audio: 'coat.mp3',
+    },
+    skirt: {
+      image: skirtImg, englishWord: 'skirt', russianWord: 'боты', audio: 'skirt.mp3',
+    },
+    pants: {
+      image: pantsImg, englishWord: 'pants', russianWord: 'боты', audio: 'pants.mp3',
+    },
+    blouse: {
+      image: blouseImg, englishWord: 'blouse', russianWord: 'боты', audio: 'blouse.mp3',
+    },
+  },
+  emotions: {
+    pagename: 'Emotions',
+    scared: {
+      image: scaredImg, englishWord: 'scared', russianWord: 'рубаха', audio: 'scared.mp3',
+    },
+    happy: {
+      image: happyImg, englishWord: 'happy', russianWord: 'то, чего всегда мало', audio: 'happy.mp3',
+    },
+    tired: {
+      image: tiredImg, englishWord: 'tired', russianWord: 'боты', audio: 'tired.mp3',
+    },
+    sad: {
+      image: sadImg, englishWord: 'sad', russianWord: 'то, чего всегда мало', audio: 'sad.mp3',
+    },
+    surprised: {
+      image: surprisedImg, englishWord: 'surprised', russianWord: 'боты', audio: 'surprised.mp3',
+    },
+    laugh: {
+      image: laughImg, englishWord: 'laugh', russianWord: 'боты', audio: 'laugh.mp3',
+    },
+    smile: {
+      image: smileImg, englishWord: 'smile', russianWord: 'боты', audio: 'smile.mp3',
+    },
+    angry: {
+      image: angryImg, englishWord: 'angry', russianWord: 'боты', audio: 'angry.mp3',
     },
   },
 };

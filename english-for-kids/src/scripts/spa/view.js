@@ -62,7 +62,15 @@ export function switchToStateFromURLHash() {
       pageHTML += layoutCardPage(SPAState.pagename.toLowerCase());
       break;
 
+    case 'AnimalB':
+      pageHTML += layoutCardPage(SPAState.pagename.toLowerCase());
+      break;
+  
     case 'Clothes':
+      pageHTML += layoutCardPage(SPAState.pagename.toLowerCase());
+      break;
+
+    case 'Emotions':
       pageHTML += layoutCardPage(SPAState.pagename.toLowerCase());
       break;
   }

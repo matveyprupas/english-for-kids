@@ -3,7 +3,7 @@ import {
   openMenu, closeMenu, switchMode, chooseMenuPart,
 } from './ctrl';
 import {
-  switchToMainPage, switchToActionAPage, switchToActionBPage, switchToActionCPage, switchToAnimalPage, switchToClothesPage, switchToAdjectivePage,
+  switchToMainPage, switchToActionAPage, switchToActionBPage, switchToActionCPage, switchToAnimalAPage, switchToAnimalBPage, switchToClothesPage, switchToAdjectivePage, switchToEmotionsPage,
 } from '../spa/ctrl';
 
 // !!! HEADER VIEW !!!
@@ -73,8 +73,10 @@ document.getElementById('actiona_page_btn').addEventListener('click', switchToAc
 document.getElementById('actionb_page_btn').addEventListener('click', switchToActionBPage);
 document.getElementById('actionc_page_btn').addEventListener('click', switchToActionCPage);
 document.getElementById('adjective_page_btn').addEventListener('click', switchToAdjectivePage);
-document.getElementById('animala_page_btn').addEventListener('click', switchToAnimalPage);
-document.getElementById('clothes_page_btn').addEventListener('click', switchToClothesPage);
+document.getElementById('animala_page_btn').addEventListener('click', switchToAnimalAPage);
+document.getElementById('animalb_page_btn').addEventListener('click', switchToAnimalBPage);
+document.getElementById('clothes_page_btn').addEventListener('click', switchToClothesPage);document.getElementById('emotion_page_btn').addEventListener('click', switchToEmotionsPage);
+
 
 document.getElementById('main_page_btn').classList.add('menu__part_onclick');
 document.getElementById('actiona_page_btn').classList.add('menu__part_onclick');
@@ -83,7 +85,9 @@ document.getElementById('actionc_page_btn').classList.add('menu__part_onclick');
 document.getElementById('adjective_page_btn').classList.add('menu__part_onclick');
 
 document.getElementById('animala_page_btn').classList.add('menu__part_onclick');
+document.getElementById('animalb_page_btn').classList.add('menu__part_onclick');
 document.getElementById('clothes_page_btn').classList.add('menu__part_onclick');
+document.getElementById('emotion_page_btn').classList.add('menu__part_onclick');
 
 export {
   header, menu, headerBurger, headerSwitch,

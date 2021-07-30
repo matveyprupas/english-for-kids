@@ -26,16 +26,24 @@ function switchToAdjectivePage() {
   switchToState({ pagename: 'Adjective' });
 }
 
-function switchToAnimalPage() {
+function switchToAnimalAPage() {
   switchToState({ pagename: 'AnimalA' });
+}
+
+function switchToAnimalBPage() {
+  switchToState({ pagename: 'AnimalB' });
 }
 
 function switchToClothesPage() {
   switchToState({ pagename: 'Clothes' });
 }
 
+function switchToEmotionsPage() {
+  switchToState({ pagename: 'Emotions' });
+}
+
 window.onhashchange = switchToStateFromURLHash;
 
 export {
-  switchToMainPage, switchToActionAPage, switchToActionBPage, switchToActionCPage, switchToAnimalPage, switchToClothesPage, switchToAdjectivePage,
+  switchToMainPage, switchToActionAPage, switchToActionBPage, switchToActionCPage, switchToAnimalAPage, switchToAnimalBPage, switchToClothesPage, switchToAdjectivePage, switchToEmotionsPage,
 };
