@@ -1,8 +1,10 @@
 import { menuArray } from './model';
-import { openMenu, closeMenu, switchMode, chooseMenuPart } from './ctrl';
 import {
-    switchToMainPage, switchToActionAPage, switchToActionBPage, switchToActionCPage, switchToAnimalPage, switchToClothesPage
-  } from '../spa/ctrl';
+  openMenu, closeMenu, switchMode, chooseMenuPart,
+} from './ctrl';
+import {
+  switchToMainPage, switchToActionAPage, switchToActionBPage, switchToActionCPage, switchToAnimalPage, switchToClothesPage, switchToAdjectivePage,
+} from '../spa/ctrl';
 
 // !!! HEADER VIEW !!!
 // !!! HEADER VIEW !!!
@@ -23,7 +25,7 @@ headerBurger.innerHTML = `
         <line x1="4" y1="50" x2="76" y2="50"></line>
     </svg>
 `;
-headerBurger.addEventListener("click", openMenu);
+headerBurger.addEventListener('click', openMenu);
 document.addEventListener('keydown', closeMenu);
 
 const h1 = document.createElement('h1');
@@ -37,7 +39,7 @@ headerSwitch.innerHTML = `
     <div class="header__switch-round"></div>
     <span>play</span>
 `;
-headerSwitch.addEventListener("click", switchMode);
+headerSwitch.addEventListener('click', switchMode);
 
 headerContainer.appendChild(headerBurger);
 headerContainer.appendChild(h1);
@@ -65,12 +67,12 @@ menuArray.forEach((el, i) => {
 document.body.appendChild(menu);
 menu.style.top = `${header.offsetHeight}px`;
 
-
 document.querySelector('h1').addEventListener('click', switchToMainPage);
 document.getElementById('main_page_btn').addEventListener('click', switchToMainPage);
 document.getElementById('actiona_page_btn').addEventListener('click', switchToActionAPage);
 document.getElementById('actionb_page_btn').addEventListener('click', switchToActionBPage);
 document.getElementById('actionc_page_btn').addEventListener('click', switchToActionCPage);
+document.getElementById('adjective_page_btn').addEventListener('click', switchToAdjectivePage);
 document.getElementById('animala_page_btn').addEventListener('click', switchToAnimalPage);
 document.getElementById('clothes_page_btn').addEventListener('click', switchToClothesPage);
 
@@ -78,10 +80,10 @@ document.getElementById('main_page_btn').classList.add('menu__part_onclick');
 document.getElementById('actiona_page_btn').classList.add('menu__part_onclick');
 document.getElementById('actionb_page_btn').classList.add('menu__part_onclick');
 document.getElementById('actionc_page_btn').classList.add('menu__part_onclick');
+document.getElementById('adjective_page_btn').classList.add('menu__part_onclick');
 
 document.getElementById('animala_page_btn').classList.add('menu__part_onclick');
 document.getElementById('clothes_page_btn').classList.add('menu__part_onclick');
-
 
 export {
   header, menu, headerBurger, headerSwitch,

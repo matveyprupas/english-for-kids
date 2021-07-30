@@ -22,6 +22,10 @@ function switchToActionCPage() {
   switchToState({ pagename: 'ActionC' });
 }
 
+function switchToAdjectivePage() {
+  switchToState({ pagename: 'Adjective' });
+}
+
 function switchToAnimalPage() {
   switchToState({ pagename: 'AnimalA' });
 }
@@ -33,5 +37,5 @@ function switchToClothesPage() {
 window.onhashchange = switchToStateFromURLHash;
 
 export {
-  switchToMainPage, switchToActionAPage, switchToActionBPage, switchToActionCPage, switchToAnimalPage, switchToClothesPage,
+  switchToMainPage, switchToActionAPage, switchToActionBPage, switchToActionCPage, switchToAnimalPage, switchToClothesPage, switchToAdjectivePage,
 };
