@@ -1,12 +1,13 @@
-import danceImg from '../../assets/imgs/dance.jpg';
-import diveImg from '../../assets/imgs/dive.jpg';
+// Action A
+
 import hugImg from '../../assets/imgs/hug.jpg';
+import diveImg from '../../assets/imgs/dive.jpg';
+import danceImg from '../../assets/imgs/dance.jpg';
 import jumpImg from '../../assets/imgs/jump.jpg';
-import drawImg from '../../assets/imgs/draw.jpg';
 import flyImg from '../../assets/imgs/fly.jpg';
+import drawImg from '../../assets/imgs/draw.jpg';
 import cryImg from '../../assets/imgs/cry.jpg';
 import walkImg from '../../assets/imgs/walk.jpg';
-import squidImg from '../../assets/imgs/squid.jpg';
 import fishingImg from '../../assets/imgs/fishing.jpg';
 
 // Action B
