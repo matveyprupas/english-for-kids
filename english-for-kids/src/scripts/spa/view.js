@@ -1,6 +1,7 @@
 import { header } from '../header/view';
 import rotateSvg from '../../assets/imgs/rotate.svg';
 import { SPAState, wordsObj, setSPAState } from './model';
+import { addEventListenersToCards } from './ctrl';
 
 // !!! VIEW !!!
 // !!! VIEW !!!
@@ -65,17 +66,18 @@ export function switchToStateFromURLHash() {
     case 'AnimalB':
       pageHTML += layoutCardPage(SPAState.pagename.toLowerCase());
       break;
-  
+
     case 'Clothes':
       pageHTML += layoutCardPage(SPAState.pagename.toLowerCase());
       break;
 
-    case 'Emotions':
+    case 'Emotion':
       pageHTML += layoutCardPage(SPAState.pagename.toLowerCase());
       break;
   }
 
   container.innerHTML = pageHTML;
+  addEventListenersToCards();
 }
 
 // !!! VIEW !!!
@@ -120,11 +122,11 @@ function layoutCardPage(keyArg) {
     englishWord = wordsObj[keyArg][key].englishWord;
 
     card = `
-          <div class="main__card">
-              <img src="${cardImg}" alt="${englishWord}" title="${englishWord}" class="main__card-img">
-              <div class="main__card-description cardpage__card-description">
+          <div class="word__card">
+              <img src="${cardImg}" alt="${englishWord}" title="${englishWord}" class="word__card-img">
+              <div class="word__card-description cardpage__card-description">
                   <span id="main__word">${key}</span>
-                  <img src="${rotateSvg}" alt="rotate" title="rotate" class="main__card-rotate">
+                  <img src="${rotateSvg}" alt="rotate" title="rotate" class="word__card-rotate">
               </div>
           </div>`;
 

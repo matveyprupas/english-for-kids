@@ -3,7 +3,7 @@ import {
   openMenu, closeMenu, switchMode, chooseMenuPart,
 } from './ctrl';
 import {
-  switchToMainPage, switchToActionAPage, switchToActionBPage, switchToActionCPage, switchToAnimalAPage, switchToAnimalBPage, switchToClothesPage, switchToAdjectivePage, switchToEmotionsPage,
+  switchToMainPage, switchToActionAPage, switchToActionBPage, switchToActionCPage, switchToAnimalAPage, switchToAnimalBPage, switchToClothesPage, switchToAdjectivePage, switchToEmotionPage,
 } from '../spa/ctrl';
 
 // !!! HEADER VIEW !!!
@@ -75,19 +75,8 @@ document.getElementById('actionc_page_btn').addEventListener('click', switchToAc
 document.getElementById('adjective_page_btn').addEventListener('click', switchToAdjectivePage);
 document.getElementById('animala_page_btn').addEventListener('click', switchToAnimalAPage);
 document.getElementById('animalb_page_btn').addEventListener('click', switchToAnimalBPage);
-document.getElementById('clothes_page_btn').addEventListener('click', switchToClothesPage);document.getElementById('emotion_page_btn').addEventListener('click', switchToEmotionsPage);
-
-
-document.getElementById('main_page_btn').classList.add('menu__part_onclick');
-document.getElementById('actiona_page_btn').classList.add('menu__part_onclick');
-document.getElementById('actionb_page_btn').classList.add('menu__part_onclick');
-document.getElementById('actionc_page_btn').classList.add('menu__part_onclick');
-document.getElementById('adjective_page_btn').classList.add('menu__part_onclick');
-
-document.getElementById('animala_page_btn').classList.add('menu__part_onclick');
-document.getElementById('animalb_page_btn').classList.add('menu__part_onclick');
-document.getElementById('clothes_page_btn').classList.add('menu__part_onclick');
-document.getElementById('emotion_page_btn').classList.add('menu__part_onclick');
+document.getElementById('clothes_page_btn').addEventListener('click', switchToClothesPage);
+document.getElementById('emotion_page_btn').addEventListener('click', switchToEmotionPage);
 
 export {
   header, menu, headerBurger, headerSwitch,

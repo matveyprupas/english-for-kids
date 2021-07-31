@@ -77,7 +77,7 @@ import dressImg from '../../assets/imgs/dress.jpg';
 import bootImg from '../../assets/imgs/boot.jpg';
 import shirtImg from '../../assets/imgs/shirt.jpg';
 
-// Emotions
+// Emotion
 
 import scaredImg from '../../assets/imgs/scared.jpg';
 import happyImg from '../../assets/imgs/happy.jpg';
@@ -122,11 +122,8 @@ export const wordsObj = {
     Clothes: {
       image: shirtImg, englishWord: 'shirt', russianWord: 'рубаха', audio: 'shirt.mp3',
     },
-    Emotions: {
+    Emotion: {
       image: angryImg, englishWord: 'angry', russianWord: 'злость', audio: 'angry.mp3',
-    },
-    Food: {
-      image: squidImg, englishWord: 'squid', russianWord: 'осьминог', audio: 'squid.mp3',
     },
   },
   actiona: {
@@ -327,8 +324,8 @@ export const wordsObj = {
       image: blouseImg, englishWord: 'blouse', russianWord: 'боты', audio: 'blouse.mp3',
     },
   },
-  emotions: {
-    pagename: 'Emotions',
+  emotion: {
+    pagename: 'Emotion',
     scared: {
       image: scaredImg, englishWord: 'scared', russianWord: 'рубаха', audio: 'scared.mp3',
     },

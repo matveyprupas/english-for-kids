@@ -1,8 +1,5 @@
 import { menu, headerBurger, headerSwitch } from './view';
 
-// const switchBtn = document.querySelector('div.header__switch');
-// const burger = document.querySelector('div.header__burger');
-
 function switchMode() {
   headerSwitch.classList.toggle('checked');
 }
@@ -24,15 +21,13 @@ function closeMenuWithoutEvent() {
 }
 
 function chooseMenuPart(e) {
+  const URLHash = window.location.hash;
+  const stateJSON = decodeURIComponent(URLHash.substr(1));
+  const pageNameStr = JSON.parse(stateJSON).pagename.toLowerCase();
   const menuPart = document.querySelectorAll('div.menu__part');
   menuPart.forEach((el) => el.classList.remove('menu__part_choosed'));
-  e.target.classList.add('menu__part_choosed');
+  document.querySelector(`#${pageNameStr}_page_btn`).classList.add('menu__part_choosed');
 }
-
-// headerSwitch.addEventListener('click', switchMode);
-// headerBurger.addEventListener('click', openMenu);
-// document.addEventListener('keydown', closeMenu);
-// menuPart.forEach((el) => el.addEventListener('click', chooseMenuPart));
 
 export {
   closeMenuWithoutEvent, openMenu, closeMenu, switchMode, chooseMenuPart,
