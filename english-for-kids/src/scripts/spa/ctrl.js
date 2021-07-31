@@ -61,16 +61,35 @@ function addEventListenersToCards() {
   ];
 
   mainCardArr.forEach((el, i) => el.addEventListener('click', cardPageArr[i]));
-  // console.log(mainCardArr, wordCardArr);
+  wordCardArr.forEach(el => el.addEventListener('click', playWordAudio));
+
   chooseMenuPart();
 }
 
-function playWordAudio() {
+function playWordAudio(e) {
+  if(e.target.tagName === "svg" || e.target.tagName === "path") {
+    rotateCard(e);
+    return;
+  }
   console.log('playWordAudio!');
 }
 
-function rotateCard() {
-  console.log('rotate!');
+function rotateCard(e) {
+  let rotateTarget = e.target.parentNode;
+
+  while (rotateTarget.className !== "word__card") {
+    rotateTarget = rotateTarget.parentNode;
+  }
+  rotateTarget.addEventListener("mouseout", rotateCardBack)
+
+  rotateTarget.classList.add("word__card_is-rotated");
+  // console.log(rotateTarget.querySelector("#main_word"));
+}
+
+function rotateCardBack () {
+  this.classList.remove("word__card_is-rotated");
+  this.removeEventListener("mouseout", rotateCardBack);
+  // console.log('rotate BACK!');
 }
 
 export {

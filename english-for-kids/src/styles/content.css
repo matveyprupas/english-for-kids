@@ -26,7 +26,7 @@
 
 .main__card:hover,
 .word__card:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   cursor: pointer;
 }
 
@@ -51,10 +51,40 @@
   font-weight: 700;
 }
 
-.main__card-rotate,
+.english__word {
+  display: inline;
+  transition: all 0.3s ease-out;
+}
+.russian__word {
+  display: none;
+  transform: rotateY(180deg);
+  transition: all 0.3s ease-out;
+}
+
 .word__card-rotate {
   max-width: 40px;
   max-height: 40px;
+}
+
+.word__card-rotate path {
+  fill: #8e8e91;
+  transition: all ease-out 0.2s;
+}
+
+.word__card-rotate:hover path {
+  fill: #000;
+}
+
+.word__card_is-rotated:hover {
+  transform: rotateY(180deg);
+}
+
+.word__card_is-rotated .english__word {
+  display: none;
+}
+
+.word__card_is-rotated .russian__word {
+  display: inline;
 }
 
 .cardpage__card-description {
