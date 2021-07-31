@@ -75,14 +75,14 @@ function playWordAudio(e) {
     rotateCard(e);
     return;
   }
-  let target = e.target;
-  
-  while (target.className !== "word__card") {
+  let { target } = e;
+
+  while (target.className !== 'word__card') {
     target = target.parentNode;
   }
-  let word = target.querySelector(".english__word").textContent;
-  let audioScr = wordsObj[pageCurrantName.toLocaleLowerCase()][word].audio;
-  let audio = new Audio(audioScr);
+  const word = target.querySelector('.english__word').textContent;
+  const audioScr = wordsObj[pageCurrantName.toLocaleLowerCase()][word].audio;
+  const audio = new Audio(audioScr);
   audio.play();
   // console.log(audio);
 }
