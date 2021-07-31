@@ -1,7 +1,11 @@
 import { chooseMenuPart, closeMenuWithoutEvent } from '../header/ctrl';
 import { switchToStateFromURLHash } from './view';
+import { wordsObj } from './model';
+
+let pageCurrantName = 'Main';
 
 function switchToState(newState) {
+  pageCurrantName = newState.pagename;
   window.location.hash = encodeURIComponent(JSON.stringify(newState));
   closeMenuWithoutEvent();
 }
@@ -71,7 +75,16 @@ function playWordAudio(e) {
     rotateCard(e);
     return;
   }
-  console.log('playWordAudio!');
+  let target = e.target;
+  
+  while (target.className !== "word__card") {
+    target = target.parentNode;
+  }
+  let word = target.querySelector(".english__word").textContent;
+  let audioScr = wordsObj[pageCurrantName.toLocaleLowerCase()][word].audio;
+  let audio = new Audio(audioScr);
+  audio.play();
+  // console.log(audio);
 }
 
 function rotateCard(e) {

@@ -1,6 +1,6 @@
 import { menuArray } from './model';
 import {
-  openMenu, closeMenu, switchMode, chooseMenuPart,
+  openMenu, closeMenu, switchMode, chooseMenuPart, closeMenuByClick,
 } from './ctrl';
 import {
   switchToMainPage, switchToActionAPage, switchToActionBPage, switchToActionCPage, switchToAnimalAPage, switchToAnimalBPage, switchToClothesPage, switchToAdjectivePage, switchToEmotionPage,
@@ -27,6 +27,7 @@ headerBurger.innerHTML = `
 `;
 headerBurger.addEventListener('click', openMenu);
 document.addEventListener('keydown', closeMenu);
+document.addEventListener('click', closeMenuByClick);
 
 const h1 = document.createElement('h1');
 h1.textContent = 'English for kids';

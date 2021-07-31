@@ -15,6 +15,20 @@ function closeMenu(e) {
   menu.classList.remove('menu_opened');
 }
 
+function closeMenuByClick(e) {
+  const lineArr = headerBurger.querySelectorAll('line');
+  const svgItem = headerBurger.querySelector('svg');
+  let isLine = false;
+  lineArr.forEach((el) => {
+    if (el === e.target) {
+      isLine = true;
+    }
+  });
+  if (isLine || svgItem === e.target || menu === e.target) return;
+
+  closeMenuWithoutEvent();
+}
+
 function closeMenuWithoutEvent() {
   headerBurger.classList.remove('header__menu-opened');
   menu.classList.remove('menu_opened');
@@ -30,5 +44,5 @@ function chooseMenuPart(e) {
 }
 
 export {
-  closeMenuWithoutEvent, openMenu, closeMenu, switchMode, chooseMenuPart,
+  closeMenuWithoutEvent, openMenu, closeMenu, switchMode, chooseMenuPart, closeMenuByClick,
 };

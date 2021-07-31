@@ -1,13 +1,22 @@
-import danceImg from '../../assets/imgs/dance.jpg';
-import diveImg from '../../assets/imgs/dive.jpg';
+// Action A
+
 import hugImg from '../../assets/imgs/hug.jpg';
+import diveImg from '../../assets/imgs/dive.jpg';
+import danceImg from '../../assets/imgs/dance.jpg';
 import jumpImg from '../../assets/imgs/jump.jpg';
-import drawImg from '../../assets/imgs/draw.jpg';
 import flyImg from '../../assets/imgs/fly.jpg';
+import drawImg from '../../assets/imgs/draw.jpg';
 import cryImg from '../../assets/imgs/cry.jpg';
 import walkImg from '../../assets/imgs/walk.jpg';
-import squidImg from '../../assets/imgs/squid.jpg';
 import fishingImg from '../../assets/imgs/fishing.jpg';
+import hugAudio from '../../assets/audio/hug.mp3';
+import cryAudio from '../../assets/audio/cry.mp3';
+import danceAudio from '../../assets/audio/dance.mp3';
+import diveAudio from '../../assets/audio/dive.mp3';
+import drawAudio from '../../assets/audio/draw.mp3';
+import fishAudio from '../../assets/audio/fish.mp3';
+import flyAudio from '../../assets/audio/fly.mp3';
+import jumpAudio from '../../assets/audio/jump.mp3';
 
 // Action B
 
@@ -129,31 +138,31 @@ export const wordsObj = {
   actiona: {
     pagename: 'ActionA',
     hug: {
-      image: hugImg, englishWord: 'hug', russianWord: 'обнимашки', audio: 'hug.mp3',
+      image: hugImg, englishWord: 'hug', russianWord: 'обнимашки', audio: hugAudio,
     },
     dive: {
-      image: diveImg, englishWord: 'dive', russianWord: 'нырять', audio: 'dive.mp3',
+      image: diveImg, englishWord: 'dive', russianWord: 'нырять', audio: diveAudio,
     },
     dance: {
-      image: danceImg, englishWord: 'dance', russianWord: 'танцевать', audio: 'dance.mp3',
+      image: danceImg, englishWord: 'dance', russianWord: 'танцевать', audio: danceAudio,
     },
     jump: {
-      image: jumpImg, englishWord: 'jump', russianWord: 'прыгать', audio: 'jump.mp3',
+      image: jumpImg, englishWord: 'jump', russianWord: 'прыгать', audio: jumpAudio,
     },
     draw: {
-      image: drawImg, englishWord: 'draw', russianWord: 'рисовать', audio: 'dance.mp3',
+      image: drawImg, englishWord: 'draw', russianWord: 'рисовать', audio: drawAudio,
     },
     fly: {
-      image: flyImg, englishWord: 'fly', russianWord: 'летать', audio: 'fly.mp3',
+      image: flyImg, englishWord: 'fly', russianWord: 'летать', audio: flyAudio,
     },
     cry: {
-      image: cryImg, englishWord: 'cry', russianWord: 'плакать', audio: 'cry.mp3',
+      image: cryImg, englishWord: 'cry', russianWord: 'плакать', audio: cryAudio,
     },
-    walk: {
-      image: walkImg, englishWord: 'walk', russianWord: 'ходить', audio: 'walk.mp3',
-    },
+    // walk: {
+    //   image: walkImg, englishWord: 'walk', russianWord: 'ходить', audio: 'walk.mp3',
+    // },
     fishing: {
-      image: fishingImg, englishWord: 'fishing', russianWord: 'рыбачить', audio: 'fishing.mp3',
+      image: fishingImg, englishWord: 'fishing', russianWord: 'рыбачить', audio: fishAudio,
     },
   },
   actionb: {
