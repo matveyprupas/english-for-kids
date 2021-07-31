@@ -61,13 +61,13 @@ function addEventListenersToCards() {
   ];
 
   mainCardArr.forEach((el, i) => el.addEventListener('click', cardPageArr[i]));
-  wordCardArr.forEach(el => el.addEventListener('click', playWordAudio));
+  wordCardArr.forEach((el) => el.addEventListener('click', playWordAudio));
 
   chooseMenuPart();
 }
 
 function playWordAudio(e) {
-  if(e.target.tagName === "svg" || e.target.tagName === "path") {
+  if (e.target.tagName === 'svg' || e.target.tagName === 'path') {
     rotateCard(e);
     return;
   }
@@ -77,18 +77,18 @@ function playWordAudio(e) {
 function rotateCard(e) {
   let rotateTarget = e.target.parentNode;
 
-  while (rotateTarget.className !== "word__card") {
+  while (rotateTarget.className !== 'word__card') {
     rotateTarget = rotateTarget.parentNode;
   }
-  rotateTarget.addEventListener("mouseout", rotateCardBack)
+  rotateTarget.addEventListener('mouseout', rotateCardBack);
 
-  rotateTarget.classList.add("word__card_is-rotated");
+  rotateTarget.classList.add('word__card_is-rotated');
   // console.log(rotateTarget.querySelector("#main_word"));
 }
 
-function rotateCardBack () {
-  this.classList.remove("word__card_is-rotated");
-  this.removeEventListener("mouseout", rotateCardBack);
+function rotateCardBack() {
+  this.classList.remove('word__card_is-rotated');
+  this.removeEventListener('mouseout', rotateCardBack);
   // console.log('rotate BACK!');
 }
 
