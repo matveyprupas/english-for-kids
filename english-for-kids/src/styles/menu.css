@@ -12,11 +12,7 @@
 .menu__part {
   padding: 10px;
   transition: all 0.2s ease-out;
-  font-size: 20px;
-  color: #707070;
-}
-
-.menu__part_onclick {
+  font-size: 24px;
   color: #333;
   font-weight: 500;
 }
@@ -33,4 +29,26 @@
 
 .menu_opened {
   left: 0;
+}
+
+@media screen and (max-width: 747px) {
+  .menu {
+    width: 50vw;
+    left: -60vw;
+  }
+
+  .menu_opened {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu {
+    width: 100vw;
+    left: -120vw;
+  }
+
+  .menu_opened {
+    left: 0;
+  }
 }

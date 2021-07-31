@@ -1,4 +1,4 @@
 import './main.css';
-import { switchToStateFromURLHash } from './scripts/spa/spa';
+import { switchToStateFromURLHash } from './scripts/spa/view';
 
 switchToStateFromURLHash();
