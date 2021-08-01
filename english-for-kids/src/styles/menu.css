@@ -1,0 +1,54 @@
+.menu {
+  background-color: lightgrey;
+  position: fixed;
+  bottom: 0;
+  width: 30vw;
+  padding: 10px 0 0 50px;
+  transition: all 0.3s ease-out;
+  left: -40vw;
+  z-index: 5;
+}
+
+.menu__part {
+  padding: 10px;
+  transition: all 0.2s ease-out;
+  font-size: 24px;
+  color: #333;
+  font-weight: 500;
+}
+
+.menu__part:hover {
+  cursor: pointer;
+  background-color: #707070;
+}
+
+.menu__part_choosed {
+  color: #212636;
+  font-weight: 900;
+}
+
+.menu_opened {
+  left: 0;
+}
+
+@media screen and (max-width: 747px) {
+  .menu {
+    width: 50vw;
+    left: -60vw;
+  }
+
+  .menu_opened {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu {
+    width: 100vw;
+    left: -120vw;
+  }
+
+  .menu_opened {
+    left: 0;
+  }
+}
