@@ -9,14 +9,16 @@ import drawImg from '../../assets/imgs/draw.jpg';
 import cryImg from '../../assets/imgs/cry.jpg';
 import walkImg from '../../assets/imgs/walk.jpg';
 import fishingImg from '../../assets/imgs/fishing.jpg';
+
 import hugAudio from '../../assets/audio/hug.mp3';
 import cryAudio from '../../assets/audio/cry.mp3';
 import danceAudio from '../../assets/audio/dance.mp3';
 import diveAudio from '../../assets/audio/dive.mp3';
 import drawAudio from '../../assets/audio/draw.mp3';
-import fishAudio from '../../assets/audio/fish.mp3';
+import fishingAudio from '../../assets/audio/fishing.mp3';
 import flyAudio from '../../assets/audio/fly.mp3';
 import jumpAudio from '../../assets/audio/jump.mp3';
+import walkAudio from '../../assets/audio/walk.mp3';
 
 // Action B
 
@@ -30,6 +32,15 @@ import playImg from '../../assets/imgs/play.jpg';
 import sleepImg from '../../assets/imgs/sleep.jpg';
 import swimImg from '../../assets/imgs/swim.jpg';
 
+import playAudio from '../../assets/audio/play.mp3';
+import skipAudio from '../../assets/audio/skip.mp3';
+import rideAudio from '../../assets/audio/ride.mp3';
+import swimAudio from '../../assets/audio/swim.mp3';
+import openAudio from '../../assets/audio/open.mp3';
+import runAudio from '../../assets/audio/run.mp3';
+import pointAudio from '../../assets/audio/point.mp3';
+import singAudio from '../../assets/audio/sing.mp3';
+
 // Action C
 
 import driveImg from '../../assets/imgs/drive.jpg';
@@ -42,6 +53,15 @@ import carryImg from '../../assets/imgs/carry.jpg';
 import readImg from '../../assets/imgs/read.jpg';
 import buildImg from '../../assets/imgs/build.jpg';
 
+import carryAudio from '../../assets/audio/carry.mp3';
+import buildAudio from '../../assets/audio/build.mp3';
+import pullAudio from '../../assets/audio/pull.mp3';
+import dropAudio from '../../assets/audio/drop.mp3';
+import pushAudio from '../../assets/audio/push.mp3';
+import argueAudio from '../../assets/audio/argue.mp3';
+import driveAudio from '../../assets/audio/drive.mp3';
+import catchAudio from '../../assets/audio/catch.mp3';
+
 // Adjective
 
 import slowImg from '../../assets/imgs/slow.jpg';
@@ -52,6 +72,15 @@ import youngImg from '../../assets/imgs/young.jpg';
 import oldImg from '../../assets/imgs/old.jpg';
 import bigImg from '../../assets/imgs/big.jpg';
 import smallImg from '../../assets/imgs/small.jpg';
+
+import unfriendlyAudio from '../../assets/audio/unfriendly.mp3';
+import slowAudio from '../../assets/audio/slow.mp3';
+import friendlyAudio from '../../assets/audio/friendly.mp3';
+import oldAudio from '../../assets/audio/old.mp3';
+import youngAudio from '../../assets/audio/young.mp3';
+import fastAudio from '../../assets/audio/fast.mp3';
+import smallAudio from '../../assets/audio/small.mp3';
+import bigAudio from '../../assets/audio/big.mp3';
 
 // AnimalA
 
@@ -64,6 +93,15 @@ import chickImg from '../../assets/imgs/chick.jpg';
 import pigImg from '../../assets/imgs/pig.jpg';
 import sheepImg from '../../assets/imgs/sheep.jpg';
 
+import rabbitAudio from '../../assets/audio/rabbit.mp3';
+import sheepAudio from '../../assets/audio/sheep.mp3';
+import pigAudio from '../../assets/audio/pig.mp3';
+import catAudio from '../../assets/audio/cat.mp3';
+import chickAudio from '../../assets/audio/chick.mp3';
+import dogAudio from '../../assets/audio/dog.mp3';
+import chickenAudio from '../../assets/audio/chicken.mp3';
+import horseAudio from '../../assets/audio/horse.mp3';
+
 // AnimalB
 
 import birdImg from '../../assets/imgs/bird.jpg';
@@ -74,6 +112,15 @@ import giraffeImg from '../../assets/imgs/giraffe.jpg';
 import fishImg from '../../assets/imgs/fish.jpg';
 import lionImg from '../../assets/imgs/lion.jpg';
 import mouseImg from '../../assets/imgs/mouse.jpg';
+
+import dolphinAudio from '../../assets/audio/dolphin.mp3';
+import lionAudio from '../../assets/audio/lion.mp3';
+import mouseAudio from '../../assets/audio/mouse.mp3';
+import fishAudio from '../../assets/audio/fish.mp3';
+import birdAudio from '../../assets/audio/bird.mp3';
+import turtleAudio from '../../assets/audio/turtle.mp3';
+import frogAudio from '../../assets/audio/frog.mp3';
+import giraffeAudio from '../../assets/audio/giraffe.mp3';
 
 // Clothes
 
@@ -86,6 +133,15 @@ import dressImg from '../../assets/imgs/dress.jpg';
 import bootImg from '../../assets/imgs/boot.jpg';
 import shirtImg from '../../assets/imgs/shirt.jpg';
 
+import shoeAudio from '../../assets/audio/shoe.mp3';
+import coatAudio from '../../assets/audio/coat.mp3';
+import dressAudio from '../../assets/audio/dress.mp3';
+import blouseAudio from '../../assets/audio/blouse.mp3';
+import pantsAudio from '../../assets/audio/pants.mp3';
+import shirtAudio from '../../assets/audio/shirt.mp3';
+import skirtAudio from '../../assets/audio/skirt.mp3';
+import bootAudio from '../../assets/audio/boot.mp3';
+
 // Emotion
 
 import scaredImg from '../../assets/imgs/scared.jpg';
@@ -96,6 +152,15 @@ import surprisedImg from '../../assets/imgs/surprised.jpg';
 import laughImg from '../../assets/imgs/laugh.jpg';
 import smileImg from '../../assets/imgs/smile.jpg';
 import angryImg from '../../assets/imgs/angry.jpg';
+
+import happyAudio from '../../assets/audio/happy.mp3';
+import surprisedAudio from '../../assets/audio/surprised.mp3';
+import smileAudio from '../../assets/audio/smile.mp3';
+import angryAudio from '../../assets/audio/angry.mp3';
+import sadAudio from '../../assets/audio/sad.mp3';
+import laughAudio from '../../assets/audio/laugh.mp3';
+import tiredAudio from '../../assets/audio/tired.mp3';
+import scaredAudio from '../../assets/audio/scared.mp3';
 
 // !!! MODEL !!!
 // !!! MODEL !!!
@@ -158,206 +223,206 @@ export const wordsObj = {
     cry: {
       image: cryImg, englishWord: 'cry', russianWord: 'плакать', audio: cryAudio,
     },
-    // walk: {
-    //   image: walkImg, englishWord: 'walk', russianWord: 'ходить', audio: 'walk.mp3',
-    // },
+    walk: {
+      image: walkImg, englishWord: 'walk', russianWord: 'ходить', audio: walkAudio,
+    },
     fishing: {
-      image: fishingImg, englishWord: 'fishing', russianWord: 'рыбачить', audio: fishAudio,
+      image: fishingImg, englishWord: 'fishing', russianWord: 'рыбачить', audio: fishingAudio,
     },
   },
   actionb: {
     pagename: 'ActionB',
     skip: {
-      image: skipImg, englishWord: 'skip', russianWord: 'прыгать', audio: 'skip.mp3',
+      image: skipImg, englishWord: 'skip', russianWord: 'прыгать', audio: skipAudio,
     },
     sing: {
-      image: singImg, englishWord: 'sing', russianWord: 'петь', audio: 'sing.mp3',
+      image: singImg, englishWord: 'sing', russianWord: 'петь', audio: singAudio,
     },
     run: {
-      image: runImg, englishWord: 'run', russianWord: 'бегать', audio: 'run.mp3',
+      image: runImg, englishWord: 'run', russianWord: 'бегать', audio: runAudio,
     },
     ride: {
-      image: rideImg, englishWord: 'ride', russianWord: 'ездить', audio: 'ride.mp3',
+      image: rideImg, englishWord: 'ride', russianWord: 'ездить', audio: rideAudio,
     },
     point: {
-      image: pointImg, englishWord: 'point', russianWord: 'показывать', audio: 'point.mp3',
+      image: pointImg, englishWord: 'point', russianWord: 'показывать', audio: pointAudio,
     },
     open: {
-      image: openImg, englishWord: 'open', russianWord: 'открывать', audio: 'open.mp3',
+      image: openImg, englishWord: 'open', russianWord: 'открывать', audio: openAudio,
     },
     play: {
-      image: playImg, englishWord: 'play', russianWord: 'играть', audio: 'play.mp3',
+      image: playImg, englishWord: 'play', russianWord: 'играть', audio: playAudio,
     },
-    sleep: {
-      image: sleepImg, englishWord: 'sleep', russianWord: 'спать', audio: 'sleep.mp3',
-    },
+    // sleep: {
+    //   image: sleepImg, englishWord: 'sleep', russianWord: 'спать', audio: 'sleep.mp3',
+    // },
     swim: {
-      image: swimImg, englishWord: 'swim', russianWord: 'плавать', audio: 'swim.mp3',
+      image: swimImg, englishWord: 'swim', russianWord: 'плавать', audio: swimAudio,
     },
   },
   actionc: {
     pagename: 'ActionC',
     drive: {
-      image: driveImg, englishWord: 'drive', russianWord: 'водить', audio: 'drive.mp3',
+      image: driveImg, englishWord: 'drive', russianWord: 'водить', audio: driveAudio,
     },
     catch: {
-      image: catchImg, englishWord: 'catch', russianWord: 'хватать', audio: 'catch.mp3',
+      image: catchImg, englishWord: 'catch', russianWord: 'хватать', audio: catchAudio,
     },
     argue: {
-      image: argueImg, englishWord: 'argue', russianWord: 'спорить', audio: 'argue.mp3',
+      image: argueImg, englishWord: 'argue', russianWord: 'спорить', audio: argueAudio,
     },
     push: {
-      image: pushImg, englishWord: 'push', russianWord: 'толкать', audio: 'push.mp3',
+      image: pushImg, englishWord: 'push', russianWord: 'толкать', audio: pushAudio,
     },
     pull: {
-      image: pullImg, englishWord: 'pull', russianWord: 'тянуть', audio: 'pull.mp3',
+      image: pullImg, englishWord: 'pull', russianWord: 'тянуть', audio: pullAudio,
     },
     drop: {
-      image: dropImg, englishWord: 'drop', russianWord: 'падать', audio: 'drop.mp3',
+      image: dropImg, englishWord: 'drop', russianWord: 'падать', audio: dropAudio,
     },
     carry: {
-      image: carryImg, englishWord: 'carry', russianWord: 'заботиться', audio: 'carry.mp3',
+      image: carryImg, englishWord: 'carry', russianWord: 'заботиться', audio: carryAudio,
     },
-    read: {
-      image: readImg, englishWord: 'read', russianWord: 'читать', audio: 'read.mp3',
-    },
+    // read: {
+    //   image: readImg, englishWord: 'read', russianWord: 'читать', audio: 'read.mp3',
+    // },
     build: {
-      image: buildImg, englishWord: 'build', russianWord: 'строить', audio: 'build.mp3',
+      image: buildImg, englishWord: 'build', russianWord: 'строить', audio: buildAudio,
     },
   },
   adjective: {
     pagename: 'Adjective',
     slow: {
-      image: slowImg, englishWord: 'slow', russianWord: 'водить', audio: 'slow.mp3',
+      image: slowImg, englishWord: 'slow', russianWord: 'водить', audio: slowAudio,
     },
     fast: {
-      image: fastImg, englishWord: 'fast', russianWord: 'хватать', audio: 'fast.mp3',
+      image: fastImg, englishWord: 'fast', russianWord: 'хватать', audio: fastAudio,
     },
     friendly: {
-      image: friendlyImg, englishWord: 'friendly', russianWord: 'спорить', audio: 'friendly.mp3',
+      image: friendlyImg, englishWord: 'friendly', russianWord: 'спорить', audio: friendlyAudio,
     },
     unfriendly: {
-      image: unfriendlyImg, englishWord: 'unfriendly', russianWord: 'толкать', audio: 'unfriendly.mp3',
+      image: unfriendlyImg, englishWord: 'unfriendly', russianWord: 'толкать', audio: unfriendlyAudio,
     },
     young: {
-      image: youngImg, englishWord: 'young', russianWord: 'тянуть', audio: 'young.mp3',
+      image: youngImg, englishWord: 'young', russianWord: 'тянуть', audio: youngAudio,
     },
     old: {
-      image: oldImg, englishWord: 'old', russianWord: 'падать', audio: 'old.mp3',
+      image: oldImg, englishWord: 'old', russianWord: 'падать', audio: oldAudio,
     },
     big: {
-      image: bigImg, englishWord: 'big', russianWord: 'заботиться', audio: 'big.mp3',
+      image: bigImg, englishWord: 'big', russianWord: 'заботиться', audio: bigAudio,
     },
     small: {
-      image: smallImg, englishWord: 'small', russianWord: 'читать', audio: 'small.mp3',
+      image: smallImg, englishWord: 'small', russianWord: 'читать', audio: smallAudio,
     },
   },
   animala: {
     pagename: 'Animal',
     sheep: {
-      image: sheepImg, englishWord: 'sheep', russianWord: 'овечечка', audio: 'sheep.mp3',
+      image: sheepImg, englishWord: 'sheep', russianWord: 'овечечка', audio: sheepAudio,
     },
     chick: {
-      image: chickImg, englishWord: 'chick', russianWord: 'цыпа', audio: 'chick.mp3',
+      image: chickImg, englishWord: 'chick', russianWord: 'цыпа', audio: chickAudio,
     },
     pig: {
-      image: pigImg, englishWord: 'pig', russianWord: 'свинотка', audio: 'pig.mp3',
+      image: pigImg, englishWord: 'pig', russianWord: 'свинотка', audio: pigAudio,
     },
     horse: {
-      image: horseImg, englishWord: 'horse', russianWord: 'лошадка', audio: 'horse.mp3',
+      image: horseImg, englishWord: 'horse', russianWord: 'лошадка', audio: horseAudio,
     },
     cat: {
-      image: catImg, englishWord: 'cat', russianWord: 'киска', audio: 'cat.mp3',
+      image: catImg, englishWord: 'cat', russianWord: 'киска', audio: catAudio,
     },
     chicken: {
-      image: chickenImg, englishWord: 'chicken', russianWord: 'курочка', audio: 'chicken.mp3',
+      image: chickenImg, englishWord: 'chicken', russianWord: 'курочка', audio: chickenAudio,
     },
     rabbit: {
-      image: rabbitImg, englishWord: 'rabbit', russianWord: 'клолик', audio: 'rabbit.mp3',
+      image: rabbitImg, englishWord: 'rabbit', russianWord: 'клолик', audio: rabbitAudio,
     },
     dog: {
-      image: dogImg, englishWord: 'dog', russianWord: 'собачка', audio: 'dog.mp3',
+      image: dogImg, englishWord: 'dog', russianWord: 'собачка', audio: dogAudio,
     },
   },
   animalb: {
     pagename: 'Animal',
     bird: {
-      image: birdImg, englishWord: 'bird', russianWord: 'овечечка', audio: 'bird.mp3',
+      image: birdImg, englishWord: 'bird', russianWord: 'овечечка', audio: birdAudio,
     },
     frog: {
-      image: frogImg, englishWord: 'frog', russianWord: 'цыпа', audio: 'frog.mp3',
+      image: frogImg, englishWord: 'frog', russianWord: 'цыпа', audio: frogAudio,
     },
     turtle: {
-      image: turtleImg, englishWord: 'turtle', russianWord: 'свинотка', audio: 'turtle.mp3',
+      image: turtleImg, englishWord: 'turtle', russianWord: 'свинотка', audio: turtleAudio,
     },
     dolphin: {
-      image: dolphinImg, englishWord: 'dolphin', russianWord: 'лошадка', audio: 'dolphin.mp3',
+      image: dolphinImg, englishWord: 'dolphin', russianWord: 'лошадка', audio: dolphinAudio,
     },
     giraffe: {
-      image: giraffeImg, englishWord: 'giraffe', russianWord: 'киска', audio: 'giraffe.mp3',
+      image: giraffeImg, englishWord: 'giraffe', russianWord: 'киска', audio: giraffeAudio,
     },
     fish: {
-      image: fishImg, englishWord: 'fish', russianWord: 'курочка', audio: 'fish.mp3',
+      image: fishImg, englishWord: 'fish', russianWord: 'курочка', audio: fishAudio,
     },
     lion: {
-      image: lionImg, englishWord: 'lion', russianWord: 'клолик', audio: 'lion.mp3',
+      image: lionImg, englishWord: 'lion', russianWord: 'клолик', audio: lionAudio,
     },
     mouse: {
-      image: mouseImg, englishWord: 'mouse', russianWord: 'собачка', audio: 'mouse.mp3',
+      image: mouseImg, englishWord: 'mouse', russianWord: 'собачка', audio: mouseAudio,
     },
   },
   clothes: {
     pagename: 'Clothes',
     shirt: {
-      image: shirtImg, englishWord: 'shirt', russianWord: 'рубаха', audio: 'shirt.mp3',
+      image: shirtImg, englishWord: 'shirt', russianWord: 'рубаха', audio: shirtAudio,
     },
     dress: {
-      image: dressImg, englishWord: 'dress', russianWord: 'то, чего всегда мало', audio: 'dress.mp3',
+      image: dressImg, englishWord: 'dress', russianWord: 'то, чего всегда мало', audio: dressAudio,
     },
     boot: {
-      image: bootImg, englishWord: 'boot', russianWord: 'боты', audio: 'boot.mp3',
+      image: bootImg, englishWord: 'boot', russianWord: 'боты', audio: bootAudio,
     },
     shoe: {
-      image: shoeImg, englishWord: 'shoe', russianWord: 'то, чего всегда мало', audio: 'shoe.mp3',
+      image: shoeImg, englishWord: 'shoe', russianWord: 'то, чего всегда мало', audio: shoeAudio,
     },
     coat: {
-      image: coatImg, englishWord: 'coat', russianWord: 'боты', audio: 'coat.mp3',
+      image: coatImg, englishWord: 'coat', russianWord: 'боты', audio: coatAudio,
     },
     skirt: {
-      image: skirtImg, englishWord: 'skirt', russianWord: 'боты', audio: 'skirt.mp3',
+      image: skirtImg, englishWord: 'skirt', russianWord: 'боты', audio: skirtAudio,
     },
     pants: {
-      image: pantsImg, englishWord: 'pants', russianWord: 'боты', audio: 'pants.mp3',
+      image: pantsImg, englishWord: 'pants', russianWord: 'боты', audio: pantsAudio,
     },
     blouse: {
-      image: blouseImg, englishWord: 'blouse', russianWord: 'боты', audio: 'blouse.mp3',
+      image: blouseImg, englishWord: 'blouse', russianWord: 'боты', audio: blouseAudio,
     },
   },
   emotion: {
     pagename: 'Emotion',
     scared: {
-      image: scaredImg, englishWord: 'scared', russianWord: 'рубаха', audio: 'scared.mp3',
+      image: scaredImg, englishWord: 'scared', russianWord: 'рубаха', audio: scaredAudio,
     },
     happy: {
-      image: happyImg, englishWord: 'happy', russianWord: 'то, чего всегда мало', audio: 'happy.mp3',
+      image: happyImg, englishWord: 'happy', russianWord: 'то, чего всегда мало', audio: happyAudio,
     },
     tired: {
-      image: tiredImg, englishWord: 'tired', russianWord: 'боты', audio: 'tired.mp3',
+      image: tiredImg, englishWord: 'tired', russianWord: 'боты', audio: tiredAudio,
     },
     sad: {
-      image: sadImg, englishWord: 'sad', russianWord: 'то, чего всегда мало', audio: 'sad.mp3',
+      image: sadImg, englishWord: 'sad', russianWord: 'то, чего всегда мало', audio: sadAudio,
     },
     surprised: {
-      image: surprisedImg, englishWord: 'surprised', russianWord: 'боты', audio: 'surprised.mp3',
+      image: surprisedImg, englishWord: 'surprised', russianWord: 'боты', audio: surprisedAudio,
     },
     laugh: {
-      image: laughImg, englishWord: 'laugh', russianWord: 'боты', audio: 'laugh.mp3',
+      image: laughImg, englishWord: 'laugh', russianWord: 'боты', audio: laughAudio,
     },
     smile: {
-      image: smileImg, englishWord: 'smile', russianWord: 'боты', audio: 'smile.mp3',
+      image: smileImg, englishWord: 'smile', russianWord: 'боты', audio: smileAudio,
     },
     angry: {
-      image: angryImg, englishWord: 'angry', russianWord: 'боты', audio: 'angry.mp3',
+      image: angryImg, englishWord: 'angry', russianWord: 'боты', audio: angryAudio,
     },
   },
 };
